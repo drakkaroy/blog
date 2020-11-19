@@ -3,5 +3,5 @@ from .views import ArticleListView, ArticleDetailView
 
 urlpatterns = [
     path('', ArticleListView.as_view()),
-    path('<pk>', ArticleDetailView.as_view()),
+    path('<url_slug>', ArticleDetailView.as_view()),
 ]
