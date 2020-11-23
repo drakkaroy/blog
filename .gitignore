@@ -26,3 +26,6 @@ venv/
 
 ### Config Files ###
 core-settings.json
+
+### Node mocules ###
+app/node_modules
