@@ -1,0 +1,20 @@
+.menu {
+  position: absolute;
+  top: -157px;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s linear;
+  background-color: $black02;
+  &--open {
+    top: 0px;
+  }
+  li {
+    border-bottom: $gray 1px solid;
+  }
+  a {
+    padding: 15px;
+    color: $white;
+    text-decoration: none;
+    display: block;
+  }
+}

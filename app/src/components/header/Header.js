@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Link
 } from "react-router-dom";
+import Menu from './../menu/Menu'
+import Hamburger from './../hamburger/Hamburger'
 
 const Header = () => {
+
+  const [status, setStatus] = useState(false);
+
+  const updateStatus = () => {
+    setStatus(!status);
+  }
+
   return (
     <div className='header'>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
+      <nav className='header__menu'>
+        <Menu status={status} />
       </nav>
+      <div className="header__hamburger">
+          <div className='header__title'>Rafael Monroy</div>
+          <Hamburger updateStatus={updateStatus} status={status} />
+      </div>
     </div>
   );
 }
