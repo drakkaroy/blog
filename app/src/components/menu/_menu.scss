@@ -1,0 +1,31 @@
+.menu {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s linear;
+  background-color: $black02;
+  &--open {
+    top: 63px;
+  }
+  li {
+    border-bottom: $gray 1px solid;
+  }
+  a {
+    padding: 15px;
+    color: $white;
+    text-decoration: none;
+    display: block;
+  }
+  @include respond-to($bp-m) {
+    position: relative;
+    top: 0;
+    width: auto;
+    ul {
+      display: flex;
+    }
+    li {
+      border: none;
+    }
+  }
+}
