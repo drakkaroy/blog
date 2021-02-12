@@ -15,11 +15,11 @@ const Header = () => {
 
   return (
     <div className='header'>
+      <div className='header__title'>Rafael Monroy</div>
       <nav className='header__menu'>
         <Menu status={status} />
       </nav>
       <div className="header__hamburger">
-          <div className='header__title'>Rafael Monroy</div>
           <Hamburger updateStatus={updateStatus} status={status} />
       </div>
     </div>
