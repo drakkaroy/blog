@@ -20,7 +20,7 @@ const Header = () => {
         <Menu status={status} />
       </nav>
       <div className="header__hamburger">
-          <Hamburger updateStatus={updateStatus} status={status} />
+        <Hamburger updateStatus={updateStatus} status={status} />
       </div>
     </div>
   );
