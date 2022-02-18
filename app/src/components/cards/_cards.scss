@@ -1,0 +1,7 @@
+.cards {
+    padding: $size-xl 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

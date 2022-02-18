@@ -1,0 +1,38 @@
+.card {
+    max-width: 320px;
+    a {
+        text-decoration: none;
+        display: block;
+    }
+    &__content {
+        padding: $size-s 0;
+    }
+    &__tag {
+        color: $tag-color;
+        font-family: $font-roboto-light;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    &__title {
+        color: $white;
+        font-size: 22px;
+        padding: $size-s 0;
+    }
+    &__excerpt {
+        color: $excerpt-color;
+        font-family: $font-roboto-light;
+    }
+
+    &--highlight {
+        max-width: 100%;
+        display: flex;
+        .card {
+            &__content {
+                padding: 0 0 0 $size-xl;
+            }
+            &__title {
+                font-size: 32px;
+            }
+        }
+    }
+}

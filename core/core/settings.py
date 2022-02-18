@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import json
-
-with open('/home/drakkaroy/blog/core-settings.json') as config_file:
+# window machine: /home/drakkaroy/blog/core-settings.json
+with open('/Users/monroy/lab/blog/core-settings.json') as config_file:
     config = json.load(config_file)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

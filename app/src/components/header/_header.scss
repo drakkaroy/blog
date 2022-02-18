@@ -1,38 +1,40 @@
 .header {
-  background-color: $black02;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: $gray 1px solid;
-  @include respond-to($bp-m) {
-    justify-content: flex-start;
-  }
-
-  &__hamburger {
-    padding: $size-s;
     background-color: $black02;
-    z-index: 100;
-    @include respond-to($bp-m) {
-      display: none;
+    padding: $size-xs 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        // border-bottom: $gray 1px solid;
+        @include respond-to($bp-m) {
+            justify-content: flex-start;
+        }
     }
-  }
-  &__title {
-    color: $white;
-    z-index: 100;
-    background: $black02;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 $size-s;
-    @include respond-to($bp-m) {
-      width: auto;
+    &__hamburger {
+        padding: $size-s;
+        background-color: $black02;
+        z-index: 100;
+        @include respond-to($bp-m) {
+            display: none;
+        }
     }
-  }
-  &__menu {
-    position: absolute;
-    width: 100%;
-    @include respond-to($bp-m) {
-      position: relative;
-      width: auto;
+    &__title {
+        color: $white;
+        z-index: 100;
+        background: $black02;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 $size-s 0 0;
+        @include respond-to($bp-m) {
+            width: auto;
+        }
     }
-  }
+    &__menu {
+        position: absolute;
+        width: 100%;
+        @include respond-to($bp-m) {
+            position: relative;
+            width: auto;
+        }
+    }
 }
